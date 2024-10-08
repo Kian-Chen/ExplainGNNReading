@@ -1,0 +1,158 @@
+site_name: Explainable GNN Reading
+site_url: https://Kian-Chen.github.io/ExplainGNNReading
+site_author: Kian-Chen
+site_description: >-
+  Explainable GNN Reading
+
+repo_url: https://github.com/Kian-Chen/ExplainGNNReading
+repo_name: ExplainGNNReading
+
+copyright: Copyright &copy; 2024-present <a href="https://github.com/Kian-Chen" target="_blank" rel="noopener noreferrer">Kian Chen</a>
+
+
+
+theme:
+  name: material
+  language: zh
+
+  features:
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.footnote.tooltips
+    - content.tooltips
+    - header.autohide
+    - navigation.indexes
+    - navigation.instant.prefetch
+    - navigation.sections
+    - navigation.tracking
+    - navigation.top
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+  include_search_page: false
+  search_index_only: true
+
+  shortcuts:
+    open_help: 191        # ?
+    navigate_next: 78     # n
+    navigate_next_alt: 39 # ->
+    navigate_previous: 80 # p
+    navigate_previous_alt: 37 # <-
+    open_search: 83       # s
+    toggle_dark_mode: 84   # t
+    toggle_header: 72      # h
+    toggle_navigation: 77  # m
+    toggle_search: 83      # s
+    toggle_toolbar: 85     # u
+
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+  font:
+    text: Roboto Slab
+    code: Roboto Mono
+  favicon: assets/icon.svg
+  logo: assets/icon.svg
+  icon:
+    repo: fontawesome/brands/github
+
+  custom_dir: overrides
+
+plugins:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - minify:
+      minify_html: true
+  - git-revision-date-localized
+  - git-authors
+
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  social:
+    - icon: fontawesome/brands/github
+      link: https://Kian-Chen.github.io/ExplainGNNReading
+
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.extra:
+      pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Paper Index: index.md
