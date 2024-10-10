@@ -162,3 +162,17 @@ nav:
       - 'Index': 'topconf/AAAI/index.md'
     - NeurIPS:
       - 'Index': 'topconf/NeurIPS/index.md'
+    - ICLR:
+      - 'Index': 'topconf/ICLR/index.md'
+    - ICML:
+      - 'Index': 'topconf/ICML/index.md'
+    - CVPR:
+      - 'Index': 'topconf/CVPR/index.md'
+    - ICDE:
+      - 'Index': 'topconf/ICDE/index.md'
+    - IJCAI:
+      - 'Index': 'topconf/IJCAI/index.md'
+    - KDD:
+      - 'Index': 'topconf/KDD/index.md'
+    - WWW:
+      - 'Index': 'topconf/WWW/index.md'

@@ -1,0 +1,20 @@
+# **Paper Index of XAI for GNNs in WWW**
+
+## Year 2024
+
+**1. Adversarial Mask Explainer for Graph Neural Networks.**(1) *Wei Zhang, Xiaofan Li, Wolfgang Nejdl.* [[paper]](https://dl.acm.org/doi/10.1145/3589334.3645608)
+{ .annotate }
+
+1.  **Abstract**
+   
+    The Graph Neural Networks (GNNs) model is a powerful tool for integrating node information with graph topology to learn representations and make predictions. However, the complex graph structure of GNNs has led to a lack of clear explainability in the decision-making process. Recently, there has been a growing interest in seeking instance-level explanations of the GNNs model, which aims to uncover the decision-making process of the GNNs model and provide insights into how it arrives at its final output. Previous works have focused on finding a set of weights (masks) for edges/nodes/node features to determine their importance. These works have adopted a regularization term and a hyperparameter K to control the explanation size during the training process and keep only the top-K weights as the explanation set. However, the true size of the explanation is typically unknown to users, making it difficult to provide reasonable values for the regularization term and K. In this work, we propose a novel framework AMExplainer which leverages the concept of adversarial networks to achieve a dual optimization objective in the target function. This approach ensures both accurate prediction of the mask and sparsity of the explanation set. In addition, we devise a novel scaling function to automatically sense and amplify the weights of the informative part of the graph, which filters out insignificant edges/nodes/node features for expediting the convergence of the solution during training. Our extensive experiments show that AMExplainer yields a more compelling explanation by generating a sparse set of masks while simultaneously maintaining fidelity.
+
+## Year 2021
+
+
+**1. Interpreting and Unifying Graph Neural Networks with An Optimization Framework.**(1) *Meiqi Zhu, Xiao Wang, Chuan Shi, Houye Ji, Peng Cui:.* [[paper]](https://dl.acm.org/doi/10.1145/3442381.3449953)
+{ .annotate }
+
+1.  **Abstract**
+   
+    Graph Neural Networks (GNNs) have received considerable attention on graph-structured data learning for a wide variety of tasks. The well-designed propagation mechanism which has been demonstrated effective is the most fundamental part of GNNs. Although most of GNNs basically follow a message passing manner, litter effort has been made to discover and analyze their essential relations. In this paper, we establish a surprising connection between different propagation mechanisms with a unified optimization problem, showing that despite the proliferation of various GNNs, in fact, their proposed propagation mechanisms are the optimal solution optimizing a feature fitting function over a wide class of graph kernels with a graph regularization term. Our proposed unified optimization framework, summarizing the commonalities between several of the most representative GNNs, not only provides a macroscopic view on surveying the relations between different GNNs, but also further opens up new opportunities for flexibly designing new GNNs. With the proposed framework, we discover that existing works usually utilize naïve graph convolutional kernels for feature fitting function, and we further develop two novel objective functions considering adjustable graph kernels showing low-pass or high-pass filtering capabilities respectively. Moreover, we provide the convergence proofs and expressive power comparisons for the proposed models. Extensive experiments on benchmark datasets clearly show that the proposed GNNs not only outperform the state-of-the-art methods but also have good ability to alleviate over-smoothing, and further verify the feasibility for designing GNNs with our unified optimization framework.
