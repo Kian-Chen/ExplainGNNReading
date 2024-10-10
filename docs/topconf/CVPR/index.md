@@ -22,7 +22,7 @@
 ## Year 2019
 
 
-**1. Generating In-Distribution Proxy Graphs for Explaining Graph Neural Networks.**(1) *Phillip E. Pope, Soheil Kolouri, Mohammad Rostami, Charles E. Martin, Heiko Hoffmann.* [[paper]](https://openaccess.thecvf.com/content_CVPR_2019/html/Pope_Explainability_Methods_for_Graph_Convolutional_Neural_Networks_CVPR_2019_paper.html)
+**1. Explainability Methods for Graph Convolutional Neural Networks.**(1) *Phillip E. Pope, Soheil Kolouri, Mohammad Rostami, Charles E. Martin, Heiko Hoffmann.* [[paper]](https://openaccess.thecvf.com/content_CVPR_2019/html/Pope_Explainability_Methods_for_Graph_Convolutional_Neural_Networks_CVPR_2019_paper.html)
 { .annotate }
 
 1.  **Abstract**
