@@ -25,7 +25,6 @@ theme:
     - header.autohide
     - navigation.indexes
     - navigation.instant.prefetch
-    - navigation.sections
     - navigation.tracking
     - navigation.top
     - search.highlight
@@ -156,3 +155,10 @@ extra_javascript:
 
 nav:
   - Paper Index: index.md
+  - Surveys:
+    - 'Bugueño et al. Preprint 24': 'surveys/hal-04660442/hal-04660442.md'
+  - Top Conferences:
+    - AAAI:
+      - 'Index': 'topconf/AAAI/index.md'
+    - NeurIPS:
+      - 'Index': 'topconf/NeurIPS/index.md'
